@@ -1,13 +1,13 @@
-import { useFecthAxios } from "./services/useFetchAxios";
+import { useFetchAxios } from "./services/useFetchAxios";
 
 function FecthAxios() {
-    const  { data, loading, error, handleCancelRequest }  = useFecthAxios('https://jsonplaceholder.typicode.com/users');    
+    const  { data, loading, error }  = useFetchAxios('https://jsonplaceholder.typicode.com/users');    
     // console.log(data);
     
     return (
         <div>
             <div className="card">
-                <button onClick={handleCancelRequest}>Cancel Request</button>
+                {/* <button onClick={handleCancelRequest}>Cancel Request</button> */}
                 {error && <h2>Error: {error}</h2>}
                 {loading && <h2>Loaing...</h2>}
                 <ul>
