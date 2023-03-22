@@ -16,11 +16,8 @@ function Fecth() {
                     ))}
                 </ul>
             </div>
-
         </div>
-
     )
 }
-
 
 export default Fecth;

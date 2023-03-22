@@ -47,16 +47,3 @@ export function useFecth(url) {
         // Regresas toda la data a tu componente
         return { data, loading, error, handleCancelRequest }
 }
-
-
-
-export const useFecthAxios = async() => {
-    try {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-        const data = response.data;
-        
-        return data;
-    } catch(err){
-        return err;
-    }
-}
