@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Fecth from './Fetch'
+import FecthAxios from './FetchAxios'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
       <h1>Fecth Like a Pro with React</h1>
       
       
-      <Fecth />
+      {/* <Fecth /> */}
+      <FecthAxios />
     </div>
   )
 }
